@@ -4,7 +4,7 @@ import { HeroParallaxDemo } from "@/components/HeroParallaxDemo";
 import { NavbarDemo } from "@/components/Navbar";
 import { FloatingDockDemo } from "@/components/FloatingDockDemo";
 import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 import { CompareDemo } from "@/components/CompareDemo";
 import { GlowingEffectDemoSecond } from "@/components/GlowingEffectDemo";
 import { Skills } from "@/components/Skills";
