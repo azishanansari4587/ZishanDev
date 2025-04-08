@@ -22,7 +22,7 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    (<div className={cn("relative block md:hidden", className)}>
+    (<div className={cn("mt-12 absolute right-4 block md:hidden ", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -45,7 +45,7 @@ const FloatingDockMobile = ({
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}>
                 <Link
-                  target="blank"
+                  target="_blank"
                   href={item.href}
                   key={item.title}
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center">
@@ -130,7 +130,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    (<Link href={href}>
+    (<Link href={href} target="_blank">
       <motion.div
         ref={ref}
         style={{ width, height }}

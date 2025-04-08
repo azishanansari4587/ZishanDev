@@ -30,7 +30,7 @@ export const Timeline = ({
       ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my <span className="font-bold text-teal-500">developer</span> journey
+          Changelog from my <span className="font-bold text-amber-600">developer</span> journey
         </h2>
         <p
           className="text-neutral-700 dark:text-neutral-300 text-2xl md:text-base max-w-sm">

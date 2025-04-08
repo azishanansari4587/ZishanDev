@@ -19,7 +19,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://drive.google.com/file/d/1kdCiTggccVkN8vQ4WdWReSFLczP-zE9h/view?usp=sharing",
     },
 
     {
@@ -27,7 +27,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/zishan-ansari-2a1019215/",
     },
 
     {
@@ -43,7 +43,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "mailto:azishanansari4587@gmail.com",
     },
     {
       title: "GitHub",

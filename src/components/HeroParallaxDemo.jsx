@@ -3,100 +3,56 @@ import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
 
 export function HeroParallaxDemo() {
-  return <HeroParallax products={products} />;
+  return <HeroParallax products={products}/>;
 }
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    title: "Urban Home City",
+    link: "https://urban-home-ten.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "/assets/Urban_Screenshot1.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "Mirzapur Developer",
+    link: "https://mirzapurdeveloper.com/",
+    thumbnail: "/assets/Portfolio_Screenshot.png",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    title: "Profonet Solutions",
+    link: "https://profonet-pi.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+      "/assets/Profonet_Screenshot1.png",
   },
-
+  
   {
-    title: "Editorially",
-    link: "https://editorially.org",
+    title: "karim X Nuzrat",
+    link: "https://karimxnuzrat.com/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      "/assets/karim_Screenshot1.png",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    title: "Sweet Home",
+    link: "https://azishanansari4587.github.io/SweetHome/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "/assets/SweetHome_Screenshot.png",
   },
 
   {
-    title: "Algochurn",
-    link: "https://algochurn.com",
+    title: "Sumaiya Rugs",
+    link: "http://sumaiyarugs.com/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      "/assets/Sumaiya_Screenshot1.png",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    title: "Profoelctron Solutions",
+    link: "https://profoelctronsolutions.com/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      "/assets/Profoelctron_Screenshot1.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    title: "Nuzrat Carpet",
+    link: "https://nuzrat-carpet.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
-
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-  },
-  {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-  },
-  {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+      "/assets/Nuzrat_Screenshot1.png",
   },
 ];

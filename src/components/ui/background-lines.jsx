@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import React from "react";
+import { FloatingDockDemo } from "../FloatingDockDemo";
 
 export const BackgroundLines = ({
   children,
@@ -9,10 +10,18 @@ export const BackgroundLines = ({
   svgOptions
 }) => {
   return (
-    (<div
-      className={cn("h-[20rem] md:h-screen w-full bg-white dark:bg-black", className)}>
-      <SVG svgOptions={svgOptions} />
-      {children}
+    (
+      <div
+      className={cn(
+        "relative w-full min-h-[30rem] md:h-screen bg-white dark:bg-black overflow-hidden py-40 ",
+        className
+      )}
+    >
+      <SVG svgOptions={svgOptions} className="relative  z-0 h-full w-full" />
+      <div className="absolute z-10">
+        {children}
+      </div>
+      <FloatingDockDemo/>
     </div>)
   );
 };
@@ -84,7 +93,7 @@ const SVG = ({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="absolute inset-0 w-full h-full">
+      className="relative inset-0 w-full h-full">
       {paths.map((path, idx) => (
         <motion.path
           d={path}

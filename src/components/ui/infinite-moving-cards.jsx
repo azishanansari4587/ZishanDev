@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "slow",
   pauseOnHover = true,
   className
 }) => {
@@ -63,45 +63,16 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          " flex min-w-full shrink-0 gap-2 md:gap-4 py-3 md:py-4 w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}>
         {items.map((item, idx) => (
           <li key={item.name}>
-            <button className="flex items-center justify-center gap-2 shadow-[inset_0_0_0_2px_#616467] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
+            <button className="flex items-center justify-center gap-2 shadow-[inset_0_0_0_2px_#616467] text-black px-6 md:px-12 py-2 md:py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200 text-sm md:text-base">
               {item.icon} {item.name}
             </button>
           </li>
-          // <li
-          //   className="w-[150px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
-          //   style={{
-          //     background:
-          //       "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-          //   }}
-          //   key={item.name}>
-          //   {/* <blockquote>
-          //     <div
-          //       aria-hidden="true"
-          //       className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
-          //     <span
-          //       className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-          //       {item.quote}
-          //     </span>
-          //     <div className="relative z-20 mt-6 flex flex-row items-center">
-          //       <span className="flex flex-col gap-1">
-          //         <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-          //           {item.name}
-          //         </span>
-          //         <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-          //           {item.title}
-          //         </span>
-          //       </span>
-          //     </div>
-          //   </blockquote> */}
-
-            
-          // </li>
         ))}
       </ul>
     </div>)

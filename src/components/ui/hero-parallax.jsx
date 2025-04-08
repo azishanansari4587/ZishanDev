@@ -7,9 +7,9 @@ import Link from "next/link";
 export const HeroParallax = ({
   products
 }) => {
-  const firstRow = products.slice(0, 5);
-  const secondRow = products.slice(5, 10);
-  const thirdRow = products.slice(10, 15);
+  const firstRow = products.slice(0, 4);
+  const secondRow = products.slice(4, 8);
+  const thirdRow = products.slice(8, 12);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -27,7 +27,7 @@ export const HeroParallax = ({
   return (
     (<div
       ref={ref}
-      className="h-[350vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="h-[280vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -87,7 +87,7 @@ export const ProductCard = ({
       }}
       key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0">
-      <Link href={product.link} className="block group-hover/product:shadow-2xl ">
+      <Link href={product.link} className="block group-hover/product:shadow-2xl " target="_blank">
         <Image
           src={product.thumbnail}
           height="600"
