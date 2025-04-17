@@ -24,11 +24,12 @@ A personal portfolio website to showcase my skills, projects, and experience as 
 
 ## 📂 Folder Structure
 
-├── /public # Static assets (images, icons) 
-├── /components # Reusable components like Navbar, Footer 
-├── /pages # All pages (Home, Projects, Contact, etc.) 
-├── /styles # Global and custom styles 
-├── /data # Optional: project or skill data in JSON
+├── /public         # Static assets like images, icons, fonts, etc.
+├── /components     # Reusable UI components like Navbar, Footer, Cards, etc.
+├── /pages          # Next.js pages (e.g., Home, About, Projects, Contact)
+├── /styles         # Global styles and Tailwind/custom CSS files
+├── /data           # (Optional) JSON or JS files for dynamic data like skills, projects, etc.
+
 
 
 
