@@ -22,7 +22,7 @@ export function TimelineDemo() {
 
           <div className="flex flex-wrap gap-4 mb-6">
             <Link
-              href="https://nuzrat-carpet-git-main-zishan-ansaris-projects-f0078605.vercel.app/"
+              href="https://nuzrat-carpet.vercel.app/"
               target="_blank"
               className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
             >
