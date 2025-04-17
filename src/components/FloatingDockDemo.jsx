@@ -27,16 +27,15 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://www.linkedin.com/in/zishan-ansari-2a1019215/",
+      href: "https://www.linkedin.com/in/mohammad-zishan-ansari-2a1019215/",
     },
-
-    {
-      title: "Discord",
-      icon: (
-        <IconBrandDiscord className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+    // {
+    //   title: "Whatsapp",
+    //   icon: (
+    //     <IconBrandWhatsapp className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "https://www.linkedin.com/in/mohammad-zishan-ansari-2a1019215/",
+    // },
    
     {
       title: "Gmail",
