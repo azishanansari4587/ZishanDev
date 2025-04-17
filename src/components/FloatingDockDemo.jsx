@@ -19,7 +19,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://drive.google.com/file/d/1kdCiTggccVkN8vQ4WdWReSFLczP-zE9h/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1Tbr5dfu5mUdizNmQqASkz4tLeTuUcFL6/view?usp=drive_link",
     },
 
     {
