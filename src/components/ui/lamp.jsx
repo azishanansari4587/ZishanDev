@@ -3,15 +3,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-
 export const LampContainer = ({
   children,
   className
 }) => {
   return (
-    (<div
+    <div
       className={cn(
-        "relative flex h-[100vh] flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
+        // CHANGE 1: h-[100vh] ko min-h-screen kiya aur pt-40 add kiya (Header se gap ke liye)
+        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0 pt-40", 
         className
       )}>
       <div
@@ -78,9 +78,11 @@ export const LampContainer = ({
         <div
           className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
-      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+
+      {/* CHANGE 2: -translate-y-80 ko kam karke -translate-y-20 ya 0 kar de */}
+      <div className="relative z-50 flex -translate-y-20 flex-col items-center px-5">
         {children}
       </div>
-    </div>)
+    </div>
   );
 };

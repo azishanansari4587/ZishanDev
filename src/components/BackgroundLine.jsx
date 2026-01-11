@@ -14,6 +14,11 @@ export function BackgroundLinesDemo() {
         className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
         Get the best advices &quot;The code you write is not just for machines—it&apos;s for the future you and your team will work with.&quot;
       </p>
+
+      {/* Ye raha tera Dock, Paragraph ke just neeche */}
+      <div className=" z-30 relative">
+          <FloatingDockDemo />
+      </div>
     </BackgroundLines>
 
     )

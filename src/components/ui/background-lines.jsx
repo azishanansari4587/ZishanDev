@@ -21,7 +21,11 @@ export const BackgroundLines = ({
       <div className="absolute z-10">
         {children}
       </div>
-      <FloatingDockDemo/>
+      
+      {/* Ye line change kari hai: z-index badha diya taaki ye upar dikhe
+      <div className="relative z-20">
+        <FloatingDockDemo/>
+      </div> */}
     </div>)
   );
 };

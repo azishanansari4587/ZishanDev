@@ -29,15 +29,24 @@ export const GoogleGeminiEffect = ({
           `Scroll this component and see the bottom SVG come to life wow this
         works!`}
       </p>
+
+      {/* --- CORRECTED BUTTON POSITION --- */}
+      {/* Absolute hata diya, ab ye Text ke just neeche aayega */}
+      <div className="relative z-50 flex items-center justify-center mt-10">
+        <div className="bg-white rounded-full p-1 shadow-2xl">
+           <AnimatedModalDemo/>
+        </div>
+      </div>
+      {/* --------------------------------- */}
      
-      <div
+      {/* <div
         className="w-full h-full -top-80 my-12 lg:my-16  flex items-center justify-center bg-red-transparent relative ">
          
         <div
           className=" font-bold  bg-white rounded-full md:px-2 md:py-2 px-2 py-1 md:mt-24  z-30 md:text-sm text-black text-xs  w-fit mx-auto ">
           <AnimatedModalDemo/>
         </div>
-      </div>
+      </div> */}
       <svg
         width="1440"
         height="100vh"

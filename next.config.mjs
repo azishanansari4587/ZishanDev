@@ -1,8 +1,33 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ['aceternity.com', 'assets.aceternity.com', 'images.unsplash.com', 'cdn.pixabay.com', 'plus.unsplash.com', 'img.icons8.com'], // Add any other domains you may need
-    },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'aceternity.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.aceternity.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'plus.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.pixabay.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.icons8.com',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
